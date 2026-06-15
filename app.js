@@ -1,0 +1,1 @@
+console.log("WallHub website loaded successfully!");
