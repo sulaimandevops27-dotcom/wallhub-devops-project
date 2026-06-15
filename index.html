@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WallHub Hacker Edition</title>
+    <title>WallHub X</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>WALLHUB X</h1>
-    <p>Cyber Wallpapers | Cars | Bikes | Gaming | Technology</p>
+    <h1>⚡ WALLHUB X</h1>
+    <p>Future Wallpapers | Cars | Bikes | Hacker</p>
 </header>
+
+<nav>
+    <button onclick="showCategory('all')">All</button>
+    <button onclick="showCategory('cars')">Cars</button>
+    <button onclick="showCategory('bikes')">Bikes</button>
+    <button onclick="showCategory('hacker')">Hacker</button>
+</nav>
 
 <div class="gallery">
 
-    <div class="card">
-        <img src="https://picsum.photos/500/300?1">
+    <div class="card cars" onclick="showInfo('Lamborghini Aventador','350 km/h','V12 Engine','$250,000')">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800">
+        <h3>Lamborghini Aventador</h3>
+    </div>
+
+    <div class="card bikes" onclick="showInfo('Kawasaki Ninja H2','299 km/h','1000cc Engine','$20,000')">
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800">
+        <h3>Kawasaki Ninja H2</h3>
+    </div>
+
+    <div class="card hacker" onclick="showInfo('Cyber Security','Ethical Hacking','Linux Tools','Cyber Defense')">
+        <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800">
         <h3>Cyber Security</h3>
     </div>
 
-    <div class="card">
-        <img src="https://picsum.photos/500/300?2">
-        <h3>Sports Cars</h3>
-    </div>
+</div>
 
-    <div class="card">
-        <img src="https://picsum.photos/500/300?3">
-        <h3>Super Bikes</h3>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span onclick="closePopup()" class="close">&times;</span>
+        <h2 id="title"></h2>
+        <p id="detail1"></p>
+        <p id="detail2"></p>
+        <p id="detail3"></p>
     </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/500/300?4">
-        <h3>Gaming Setup</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/500/300?5">
-        <h3>Space</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/500/300?6">
-        <h3>Technology</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/500/300?7">
-        <h3>Nature</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/500/300?8">
-        <h3>Ocean</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/500/300?9">
-        <h3>City Lights</h3>
-    </div>
-
 </div>
 
 <script src="app.js"></script>
