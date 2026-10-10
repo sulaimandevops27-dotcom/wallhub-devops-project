@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WallHub X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>⚡ WALLHUB X</h1>
+    <p>Future Wallpapers | Cars | Bikes | Hacker</p>
+</header>
+
+<nav>
+    <button onclick="showCategory('all')">All</button>
+    <button onclick="showCategory('cars')">Cars</button>
+    <button onclick="showCategory('bikes')">Bikes</button>
+    <button onclick="showCategory('hacker')">Hacker</button>
+</nav>
+
+<div class="gallery">
+
+    <div class="card cars" onclick="showInfo('Lamborghini Aventador','350 km/h','V12 Engine','$250,000')">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800">
+        <h3>Lamborghini Aventador</h3>
+    </div>
+
+    <div class="card bikes" onclick="showInfo('Kawasaki Ninja H2','299 km/h','1000cc Engine','$20,000')">
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800">
+        <h3>Kawasaki Ninja H2</h3>
+    </div>
+
+    <div class="card hacker" onclick="showInfo('Cyber Security','Ethical Hacking','Linux Tools','Cyber Defense')">
+        <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800">
+        <h3>Cyber Security</h3>
+    </div>
+
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span onclick="closePopup()" class="close">&times;</span>
+        <h2 id="title"></h2>
+        <p id="detail1"></p>
+        <p id="detail2"></p>
+        <p id="detail3"></p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
